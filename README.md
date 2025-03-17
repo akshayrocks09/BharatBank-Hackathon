@@ -70,3 +70,36 @@ Install the APK on your device: bash adb install build/app/outputs/flutter-apk/a
 📡 API Documentation Not applicable at this stage. The BharatBank prototype uses simulated data for demonstration purposes:
 
 Login OTP verification is mocked (accepts any input). Dashboard balance (₹25,000) and transactions (e.g., Grocery, Salary) are hardcoded. Transfer functionality simulates success without a real backend. ➡️ Future iterations will integrate APIs for Aadhaar OTP validation, account data, and transaction processing (e.g., via UPI or bank gateways).
+
+
+
+Full Structure
+
+E:\bharatbank\
+├── pubspec.yaml
+├── .gitignore
+├── android/
+│   ├── app/
+│   │   ├── build.gradle
+│   │   └── src/
+│   └── AndroidManifest.xml
+├── ios/ *
+├── lib/
+│   ├── main.dart *
+│   └── screens/
+│       ├── login_screen.dart
+│       ├── dashboard_screen.dart
+│       ├── transfer_screen.dart
+│       ├── pay_bills_screen.dart *
+│       ├── add_money_screen.dart *
+│       ├── upi_qr_screen.dart *
+│       ├── recharge_screen.dart *
+│       ├── loans_screen.dart *
+│       ├── transactions_screen.dart *
+│       ├── profile_screen.dart *
+│       ├── more_screen.dart *
+│       ├── splash_screen.dart *
+│       ├── onboarding_screen.dart *
+│       └── language_selection_screen.dart *
+├── test/ *
+└── build/ (generated)
